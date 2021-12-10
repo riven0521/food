@@ -1,0 +1,53 @@
+<!--分類標題-->
+<!-- <scroll-view scroll-x="true" class="tab-item">
+  <view class="label-1" wx:for="{{itemdata}}">
+    <view>
+      <view class="label">{{item.label}}</view>
+    </view>
+  </view>
+</scroll-view> -->
+
+<view class="content">
+  <view class="navbg">
+    <view class="nav">
+      <scroll-view scroll-x="true" class="scroll-view_H">
+        <!-- 滚动视图 -->
+        <view class="scroll-view_H">
+          <view wx:for="{{itemdata}}">
+            <view class="{{flag==item.id?'select':'normal'}}" id="{{item.id}}" bindtap="switchNav">{{item.label}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="add">+</view>
+  </view>
+
+  <swiper current="{{currentTab}}" bindchange="swiperChange" style="height:800px">
+    <swiper-item wx:for="{{pageList}}"
+      style="width: 750rpx; height: 1606rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+      <!-- 这里写每一个页面，同一个 -->
+      <view class="list">
+        <view class="book">
+          <view class="pic">
+            <image class="icon" src="{{item.img}}" style="width:60px;height:60px"></image>
+          </view>
+          <view class="base-info">
+            <view class="name"> {{item.content}}</view>
+            <view class="desc">碳水：{{item.tanshui}}</view>
+            <view class="desc">蛋白质：{{item.danbaizhi}}</view>
+            <view class="desc">脂肪：{{item.zhifang}}</view>
+            <view class="desc">热量：{{item.calorie}}</view>
+          </view>
+          <view class="ok" style="width:30%; height: 282rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+            优先食用 <icon type="success" size="15" color="green"></icon>
+          </view>
+        </view>
+      </view>
+      <view class="hr"></view>
+      <!------------------------->
+
+
+    </swiper-item>
+
+  </swiper>
+</view>

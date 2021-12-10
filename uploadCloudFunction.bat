@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e food-7ga6oae9719babe9 --n quickstartFunctions --r --project "C:\Users\CyberRim\WeChatProjects\food" --report_first --report

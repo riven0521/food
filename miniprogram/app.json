@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/diary/diary",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#90edb6",
+    "navigationBarTitleText": "健康饮食助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#90edb6",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "img/index-active.png",
+        "iconPath": "img/index.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "selectedIconPath": "img/classify-active.png",
+        "iconPath": "img/classify.png"
+      },
+      {
+        "pagePath": "pages/diary/diary",
+        "text": "记录",
+        "selectedIconPath": "img/diary-active.png",
+        "iconPath": "img/diary.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人",
+        "selectedIconPath": "img/my-active.png",
+        "iconPath": "img/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
