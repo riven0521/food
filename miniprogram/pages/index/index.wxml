@@ -11,7 +11,7 @@
 <!--轮播图-->
 <view class="swiper1">
     <swiper autoplay interval="1500" indicator-dots indicator-color="ededed" indicator-active-color="#90edb6" circular>
-        <swiper-item wx:for="{{indexs}}">
+        <swiper-item wx:for="{{indexs}}" wx:key="id">
             <image class="auto" src="/img/{{item}}"></image>
         </swiper-item>
     </swiper>
@@ -20,7 +20,7 @@
 <!--分类布局-->
 <view class="category-border">
     <view class="category">
-        <view class="category-works" wx:for="{{works}}" bindtap="jumpToClassify" data-id="{{item.id}}">
+        <view class="category-works" wx:for="{{works}}" wx:key="id" bindtap="jumpToClassify" data-id="{{item.id}}">
             <image class="icon" src="{{item.img}}"></image>
             <view class="label">{{item.label}}</view>
         </view>

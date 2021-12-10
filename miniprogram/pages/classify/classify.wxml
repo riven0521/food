@@ -13,7 +13,7 @@
       <scroll-view scroll-x="true" class="scroll-view_H">
         <!-- 滚动视图 -->
         <view class="scroll-view_H">
-          <view wx:for="{{itemdata}}">
+          <view wx:for="{{itemdata}}" wx:key="id">
             <view class="{{flag==item.id?'select':'normal'}}" id="{{item.id}}" bindtap="switchNav">{{item.label}}</view>
           </view>
         </view>
@@ -23,7 +23,7 @@
   </view>
 
   <swiper current="{{currentTab}}" bindchange="swiperChange" style="height:800px">
-    <swiper-item wx:for="{{pageList}}"
+    <swiper-item wx:for="{{pageList}}" wx:key="id"
       style="width: 750rpx; height: 1606rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
       <!-- 这里写每一个页面，同一个 -->
       <view class="list">
