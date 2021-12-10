@@ -8,8 +8,7 @@ Page({
   },
 
   onLoad:function(){
-    const db = wx.cloud.database()
-    console.log(db);
+    
   }
 
 });

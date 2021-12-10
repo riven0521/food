@@ -1,8 +1,12 @@
 // pages/classify/classify.js
 // bug:class标签横线
+const {addFood,getFoods} = require('../../crud/crud.js');
+const {callFunction,radomNumber,randomString} = require('../../utils/util.js');
+
 
 const app = getApp();
 const globalData = app.globalData;
+
 Page({
 
   data: {
@@ -48,65 +52,12 @@ Page({
       }
     ],
     /****这里填每一个页面的数据，像第一个一样** */
-    pageList: [{
-        id: 0,
-        img: "/img/class/zmc.png",
-        content: '芝麻菜',
-        tanshui: '2.18g/100g',
-        danbaizhi: '2.58g/100g',
-        zhifang: '0.66g/100g',
-        calorie: '25kcal/100g',
-
-      },
-      {
-        id: 1,
-        img: "/img/class/zmc.png",
-        content: '芝麻菜',
-        tanshui: '2.18g/100g',
-        danbaizhi: '2.58g/100g',
-        zhifang: '0.66g/100g',
-        calorie: '25kcal/100g',
-      },
-      {
-        id: 2,
-        content: '我是2',
-      },
-      {
-        id: 3,
-        content: '我是3',
-      },
-      {
-        id: 4,
-        content: '我是4',
-      },
-      {
-        id: 5,
-        content: '我是5',
-      },
-      {
-        id: 6,
-        content: '我是6',
-      },
-      {
-        id: 7,
-        content: '我是7',
-      },
-      {
-        id: 8,
-        content: '我是8',
-      },
-      {
-        id: 9,
-        content: '我是9',
-      },
-
-    ],
+    pageList: [],
     currentTab: 0,
     flag: 0,
 
   },
   switchNav: function (e) {
-    console.log(e);
     var page = this;
     var id = e.target.id;
     if (this.data.currentTab == id) {
@@ -130,6 +81,94 @@ Page({
       flag: id
     });
   },
+  addFoodOfThis:async function () {
+    //示例
+    const food={
+      name : randomString(6),
+      category:this.data.flag,
+      calories : radomNumber(1000).toFixed(2),
+      protein : radomNumber(1).toFixed(2)
+    };
+
+    const _id = await addFood(food);
+    console.log(_id);
+    if(_id!=''){
+      const pageList = this.data.pageList;
+      // debugger;
+      pageList[food.category].push(food);
+      this.setData({
+        pageList:pageList
+      });
+    }
+    
+    
+  },
+
+  getFoodsOfThis:async function () {
+    const foods = await getFoods();
+    return foods
+  },
+
+  assemblyPagesData: function (categorysMapForId,foods) {
+    const pageList = [];
+    
+    for(let i =0;i<categorysMapForId.size;i++){
+      pageList.push([]);
+    }
+
+    foods.forEach(food => {
+      pageList[food.category].push(food);
+    });
+    this.setData({
+      pageList:pageList
+    });
+  },
+
+  getCategorys:async function () {
+    // debugger;
+    try{
+      const categorys = await callFunction('getCategorys',{},[]);
+      return categorys;
+    }catch(error){
+      console.log(error);
+      return [];
+    }
+  },
+
+  generateCategorysMapForId:function (categorys) {
+    const map = new Map();
+    categorys.forEach(category => {
+      map.set(category.id,category.name);
+    });
+    return map;
+  },
+
+  generateCategorysMapForName:function (categorys) {
+    const map = new Map();
+    categorys.forEach(category => {
+      map.set(category.name,category.id);
+    });
+    return map;
+  },
+
+  onLoad:async function () {
+    const foods = await this.getFoodsOfThis();
+    console.log('加载所有食物数据',foods)
+
+    if(globalData.categorys == undefined || globalData.categorys == null){
+      globalData.categorys = await this.getCategorys();
+      console.log('加载种类数据',globalData.categorys);
+    }
+    if(globalData.categorysMapForId == undefined || globalData.categorysMapForId == null){
+      globalData.categorysMapForId = this.generateCategorysMapForId(globalData.categorys);
+    }
+    if(globalData.categorysMapForName == undefined || globalData.categorysMapForName == null){
+      globalData.categorysMapForName = this.generateCategorysMapForName(globalData.categorys);
+    }
+    this.assemblyPagesData(globalData.categorysMapForId,foods);
+    
+    
+  },
 
 
   onShow: function (options) {
@@ -139,6 +178,8 @@ Page({
     option.target.id = globalData.classifyTapChoiseId;
     this.switchNav(option);
   },
+
+  
 
 
 })

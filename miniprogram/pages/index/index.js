@@ -1,4 +1,4 @@
-// 小波到此一游
+
 
 const app = getApp();
 const globalData = app.globalData;
