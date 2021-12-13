@@ -1,0 +1,36 @@
+/* pages/text1/text1.wxss */
+.top{
+  margin-left: 15px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-weight:1000;
+}
+
+.category{
+  display: flex;
+  flex-direction: row;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.title{
+  width:30%;
+}
+.input{
+  width:70%;
+}
+.line{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+.btn{
+  background-color:#90edb6;
+  color: #ffffff;
+  margin-top:5px;
+  width:90%;
+}
+.hr{
+  height: 10px;
+  background-color: #f2f2f2;
+}

@@ -9,7 +9,7 @@
 
 <view class="content">
   <view class="navbg">
-    <view class="nav">
+    <view class="nav">;''
       <scroll-view scroll-x="true" class="scroll-view_H">
         <!-- 滚动视图 -->
         <view class="scroll-view_H">
@@ -19,6 +19,7 @@
         </view>
       </scroll-view>
     </view>
+    <!-- <view class="add" bindtap="goEventList">+</view> -->
     <view class="add" bindtap="addFoodOfThis">+</view>
   </view>
 
@@ -27,7 +28,7 @@
       style="width: 750rpx; height: 1606rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
       <!-- 这里写每一个页面，同一个 -->
       <view class="list">
-        <view class="book" wx:for="{{pageData}}" >
+        <view class="book" wx:for="{{pageData}}">
           <view class="pic">
             <image class="icon" src="{{item.img}}" style="width:60px;height:60px"></image>
           </view>
@@ -36,7 +37,8 @@
             <view class="desc">蛋白质：{{item.protein}}什么什么单位</view>
             <view class="desc">热量：{{item.calories}}卡路里</view>
           </view>
-          <view class="ok" style="width:30%; height: 282rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+          <view class="ok"
+            style="width:30%; height: 282rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
             优先食用 <icon type="success" size="15" color="green"></icon>
           </view>
         </view>

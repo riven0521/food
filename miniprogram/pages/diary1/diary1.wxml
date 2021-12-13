@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="info">
+    <view class="nickName">
+      <text>类别</text>
+      <text class="real">{{sum}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>菜1</text>
+      <text class="real">{{one}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>菜2</text>
+      <text class="real">{{two}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>菜3</text>
+      <text class="real">{{three}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>数量</text>
+      <text class="real">{{shuliang}}</text>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>时间</text>
+      <text class="real">{{shijian}}</text>
+    </view>
+  </view>
+</view>

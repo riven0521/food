@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "记录"
+  "navigationBarTitleText": "记录",
+  "date-picker": "../../components/date-picker/date-picker"
 }

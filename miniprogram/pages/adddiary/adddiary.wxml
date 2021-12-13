@@ -1,0 +1,51 @@
+<!--pages/adddiary/adddiary.wxml-->
+<view class="container">
+  <view class="info">
+    <view class="nickName">
+      <picker bindchange="bindPickerChange" value="{{array}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[sum]}}
+        </view>
+      </picker>
+    </view>
+    <view class="nickName">
+      <picker bindchange="bindPickerChange1" value="{{array1}}" range="{{array1}}">
+        <view class="picker">
+          当前选择1：{{array1[cai1]}}
+        </view>
+      </picker>
+    </view>
+    <view class="nickName">
+      <picker bindchange="bindPickerChange2" value="{{array1}}" range="{{array1}}">
+        <view class="picker">
+          当前选择2：{{array1[cai2]}}
+        </view>
+      </picker>
+    </view>
+    <view class="nickName">
+      <picker bindchange="bindPickerChange3" value="{{array1}}" range="{{array1}}">
+        <view class="picker">
+          当前选择3：{{array1[cai3]}}
+        </view>
+      </picker>
+    </view>
+    <view class="nickName">
+      <text>数量</text>
+      <input bindinput="shuliang" class="real"></input>
+    </view>
+    <view class="hr"></view>
+    <view class="agg">
+      <text>生日</text>
+      <!-- <view class="real">{{birthday}}</view> -->
+      <picker bindchange="shijian" mode="date" value="{{birthday}}" class="data">
+        <input disabled="true" placeholder="请选择" value="{{shijian}}"></input>
+      </picker>
+
+    </view>
+  </view>
+  <div bindtap="add" class="btnSave">
+    添加记录
+  </div>
+
+
+</view>

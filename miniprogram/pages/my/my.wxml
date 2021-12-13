@@ -1,2 +1,56 @@
-<!--pages/my/my.wxml-->
-
+<view class="container">
+    <view class="userInfo">
+        <view class="info_box">
+            <image border="0" class="avatar" src="{{avatarUrl}}"></image>
+            <text class="nickName">{{nickName}}</text>
+            <view bindtap="addInfo" class="btn-info">授权</view>
+            <view bindtap="editInfo" class="btn-info">编辑</view>
+        </view>
+        <view class="width-box">
+            <view style="flex:1;">
+                <view class="width-num">{{now}}</view>
+                <view class="width-des">当前体重（公斤）</view>
+            </view>
+            <view style="flex:1;">
+                <view class="width-num">{{new1}}</view>
+                <view class="width-des">目标体重（公斤）</view>
+            </view>
+            <view style="flex:1;">
+                <view class="width-num">{{user.bmi?user.bmi:'--'}}</view>
+                <view class="width-des">BMI指数</view>
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <view bindtap="goEventList" class="list_box">
+            <!-- bindtap="toAnalyze"   -->
+            <view>
+                <image border="0" class="left" src="../../images/profile_icon_weight_analysis.png"></image>
+                <text class="list-title" >体重分析</text>
+                <!-- bodydata -->
+            </view>
+            <image class="right" src="../../images/icon_rightarrow.png" ></image>
+        </view>
+        <view bindtap="toWeightRecord" class="list_box">
+            <view>
+                <image border="0" class="left" src="../../images/profile_icon_weight_record.png"></image>
+                <text class="list-title">体重记录</text>
+            </view>
+            <image class="right" src="../../images/icon_rightarrow.png"></image>
+        </view>
+        <view bindtap="gomyAdd" class="list_box">
+            <view>
+                <image border="0" class="left" src="../../images/icon_add.png"></image>
+                <text class="list-title">我的添加</text>
+            </view>
+            <image class="right" src="../../images/icon_rightarrow.png"></image>
+        </view>
+        <view class="list_box">
+            <button class="share" hoverClass="btn-share" openType="share">
+                <image border="0" class="left" src="../../images/profile_icon_share.png"></image>
+                <text class="list-title">分享给好友</text>
+                <image border="0" class="right" src="../../images/icon_rightarrow.png"></image>
+            </button>
+        </view>
+    </view>
+</view>

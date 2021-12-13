@@ -1,0 +1,59 @@
+<!--pages/text1/text1.wxml-->
+<text>pages/text1/text1.wxml</text>
+<!--pages/useadd/useadd.wxml-->
+<view class="top">基本信息</view>
+<view class="line"></view>
+<form bindsubmit="formSubmit">
+  <view class="category">
+    <view class="title">食物名称</view>
+    <view class="input"><input  name="foodName" bindinput="food" placeholder="如水果沙拉" placeholder-style="color:#999999;font-size:16px;"
+        bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="category">
+    <view class="title">数量</view>
+    <view class="input"><input name="foodName1" bindinput="shuliang" placeholder="如：1" placeholder-style="color:#999999;font-size:16px;"
+        bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="category">
+    <view class="title">单位</view>
+    <view class="input"><input name="foodName2" bindinput="danwei" placeholder="如：克、碟、碗"
+        placeholder-style="color:#999999;font-size:16px;" bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="category">
+    <view class="title">热量</view>
+    <view class="input"><input name="foodName3" bindinput="reliang" placeholder="如：100 千卡"
+        placeholder-style="color:#999999;font-size:16px;" bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="line"></view>
+  <view class="hr"></view>
+
+  <view class="top">选填信息</view>
+  <view class="line"></view>
+  <view class="category">
+    <view class="title">蛋白质</view>
+    <view class="input"><input name="foodName4" bindinput="danbaizhi" placeholder="" placeholder-style="color:#999999;font-size:16px;"
+        bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+
+  <view class="category">
+    <view class="title">脂肪</view>
+    <view class="input"><input name="foodName5" bindinput="zhifang" placeholder="" placeholder-style="color:#999999;font-size:16px;"
+        bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view>
+  <view class="category">
+    <view class="title">碳水化合物</view>
+    <view class="input"><input name="foodName6" bindinput="tanshui" placeholder="" placeholder-style="color:#999999;font-size:16px;"
+        bindblur="checkValue" /></view>
+  </view>
+  <view class="line"></view> <button bindtap="submit" class="btn" form-type="submit">完成</button>
+</form>

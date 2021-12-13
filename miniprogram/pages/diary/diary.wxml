@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class="list">
+
+    <view bindtap="openSport" class="list_box" wx:for="{{yinshi}}">
+      <navigator
+        url="../../pages/diary1/diary1?sum={{item.sum}}&id={{item._id}}&one={{item.one}}&two={{item.two}}&three={{item.three}}&shuliang={{item.shuliang}}&shijian={{item.shijian}}">
+        <view>
+          <view class="list-title">
+            <view class="calory-title">{{item.sum}}</view>
+          </view>
+        </view>
+        <text class="no-record">{{item.shijian}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view bindtap="toDietAnalyze" class="btn-analysis">
+    <image src="../../images/yinshifenxi.png"></image>
+    <text class="btn-title">饮食分析</text>
+  </view>
+</view>

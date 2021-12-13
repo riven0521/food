@@ -1,0 +1,46 @@
+<view class="container">
+    <view class="noData" wx:if="{{list.length==0}}">你还未添加体重记录~</view>
+    <block wx:for="{{list}}">
+        <view bindtouchmove="touchmove" bindtouchstart="touchstart" class="touch-item {{item.isTouchMove?'touch-move-active':''}}" data-index="{{index}}">
+            <view class="content">
+                <text class="weight">{{item.weight}} 公斤</text>
+                <text class="recordTime">{{item.recordTime}}</text>
+            </view>
+            <view catchtap="del" class="del" data-id="{{item.id}}" data-index="{{index}}">删除</view>
+        </view>
+        <view class="bottom-line" wx:if="{{index!=list.length-1}}"></view>
+    </block>
+</view>
+<div bindtap="clickme" class="footer">
+  添加记录
+</div>
+<view bindtap="hideModal" class="commodity_screen" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class="btn-box">
+        <view class="btn-cancel-box" style="flex:1;">
+            <view bindtap="hideModal" class="btn-cancel">取消</view>
+        </view>
+        <view bindtap="showDatePicker" style="flex:1;">
+            <view class="bt-date">{{date}}/体重
+        <image src="../../images/icon_downarrow.png"></image>
+            </view>
+        </view>
+        <view class="btn-confirm-box" style="flex:1;">
+            <view bindtap="save" class="btn-confirm">确定</view>
+        </view>
+    </view>
+    <view class="page_box">
+        <view class="input_view">
+            <view class="input_box">
+                <text class="content">{{content}}</text>
+                <view class="className">公斤</view>
+            </view>
+        </view>
+        <view class="keyboard {{keyShow&&'hind_box'}}">
+            <view class="key_box">
+                <text catchtap="keyTap" class="keys {{index%3==0&&'border0'}}" data-keys="{{item}}" wx:for="{{KeyboardKeys}}" wx:key="this">{{item}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<date-picker bindcancelclick="datePickerOnCancelClick" bindsureclick="datePickerOnSureClick" id="date-picker" isShow="{{datePickerIsShow}}" value="{{datePickerValue}}"></date-picker>

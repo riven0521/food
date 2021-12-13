@@ -1,0 +1,50 @@
+<view class="content">
+  <view class="navbg">
+    <view class="nav">
+      <scroll-view scroll-x="true" class="scroll-view_H">
+        <!-- 滚动视图 -->
+        <view class="scroll-view_H">
+          <view wx:for="{{itemdata}}" wx:key="id">
+            <view class="{{flag==item.id?'select':'normal'}}" id="{{item.id}}" bindtap="switchNav">{{item.label}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="add" bindtap="addFoodOfThis">+</view>
+  </view>
+
+  <swiper current="{{currentTab}}" bindchange="swiperChange" style="height:800px">
+    <swiper-item
+      style="width: 750rpx; height: 1606rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+
+      <view>
+        <button bindtap="goEventList">自定义</button>
+      </view>
+
+      <!-- 这里写每一个页面，同一个 -->
+      <view class="list">
+        <view class="book" wx:for="{{fenlei}}">
+          <view class="pic">
+            <image class="icon" src="{{item.img}}" style="width:60px;height:60px"></image>
+          </view>
+          <view class="base-info">
+            <view class="name">{{item.name}}</view>
+            <view class="desc">碳水：{{item.CarbonWater}}/{{item.unit}}kg</view>
+            <view class="desc">蛋白质：{{item.protein}}/{{item.unit}}kg</view>
+            <view class="desc">脂肪：{{item.fat}}/{{item.unit}}kg</view>
+            <view class="desc">热量：{{item.Calories}}/{{item.unit}}kg</view>
+          </view>
+          <view class="ok"
+            style="width:30%; height: 282rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+            优先食用 <icon type="success" size="15" color="green"></icon>
+          </view>
+        </view>
+      </view>
+      <view class="hr"></view>
+      <!------------------------->
+
+
+    </swiper-item>
+
+  </swiper>
+</view>

@@ -1,0 +1,5 @@
+<view class="page__hd" bindtap="goEventList" style="position:fixed; bottom:0;width: 750rpx;">
+  <button class="button_hd">添加新食物数据</button>
+</view>
+
+

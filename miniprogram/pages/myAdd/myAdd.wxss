@@ -1,0 +1,10 @@
+
+
+.page__hd {
+
+background-color: #90edb6
+}
+
+.button_hd {
+  background-color: #90edb6
+}

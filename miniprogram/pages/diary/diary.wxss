@@ -1,0 +1,283 @@
+.container {
+  box-shadow: inset 1px 1px 1px #ebedf0;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 10rpx;
+  overflow-x: hidden;
+}
+
+.date {
+  font-size: 40rpx;
+  line-height: 80rpx;
+  margin-left: 40rpx;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 40rpx;
+  vertical-align: middle;
+}
+
+.date-downarrow {
+  width: 30rpx;
+  height: 20rpx;
+  padding: 0rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.container .list {
+  width: 100%;
+  overflow: hidden;
+  padding: 0rpx;
+  clear: both;
+  margin-top: 20rpx;
+  margin-left: 0rpx;
+  float: left;
+  background-color: #fff;
+  text-align: left;
+}
+
+.container .list .list_box {
+  width: 100%;
+  min-height: 85rpx;
+  padding: 0rpx;
+  margin-top: 40rpx;
+  height: auto;
+}
+
+.list .left {
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 40rpx;
+  float: left;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.list .list-title {
+  padding: 0rpx;
+  margin-left: 40rpx;
+  float: left;
+  text-align: left;
+  color: #000;
+  font-size: 34rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.list .right {
+  width: 30rpx;
+  height: 19rpx;
+  padding: 0rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.list_box::after {
+  clear: both;
+}
+
+.bottom-line {
+  border-bottom: 1rpx solid#e6e6e6;
+}
+
+.diet-line {
+  border-bottom: 1rpx solid#e6e6e6;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.list_box .calory-num {
+  color: #b2b4bc;
+  font-size: 28rpx;
+  font-weight: normal;
+  margin-top: 10rpx;
+}
+
+.btn-analysis {
+  width: 90%;
+  height: 100rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  color: #32d594;
+  font-size: 30rpx;
+  font-weight: bold;
+  border: 1px #32d594 solid;
+  border-radius: 20rpx;
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+}
+
+.btn-analysis image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.diet-box {
+  clear: both;
+  background-color: #f5f7fa;
+  height: auto;
+  margin-top: 140rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+
+.diet {
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  line-height: 140rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.diet {
+  position: relative;
+  height: 120rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+
+.diet .title {
+  font-size: 34rpx;
+  font-weight: normal;
+  color: #424242;
+  width: 290rpx;
+  overflow: hidden;
+}
+
+.diet .calory {
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #b2b4bc;
+  text-align: right;
+  overflow: hidden;
+}
+
+.no-record {
+  font-size: 30rpx;
+  color: #b2b4bc;
+  float: right;
+  padding-right: 40rpx;
+}
+
+.touch-item {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 10px;
+  margin-right: 0;
+  transition: all 0.4s;
+  transform: translateX(90px);
+  margin-left: -90px;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.index-box {
+  display: flex;
+}
+
+.content .name {
+  margin-left: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 440rpx;
+  display: inline-block;
+  height: 60rpx;
+  white-space: nowrap;
+}
+
+.content .weight {
+  font-size: 28rpx;
+  color: #b2b4bc;
+  text-align: right;
+  width: 240rpx;
+}
+
+.del {
+  background-color: #ff5052;
+  width: 120rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transform: translateX(90px);
+  transition: all 0.4s;
+}
+
+.touch-move-active .content,.touch-move-active .del {
+  transform: translateX(0);
+}
+
+.userInfo-box {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.userInfo-box .userInfo-value {
+  font-size: 56rpx;
+  color: #424242;
+  font-weight: 600;
+}
+
+.userInfo-box .userInfo-txt {
+  color: #b2b4bc;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+
+.right-calory {
+  float: right;
+  padding-right: 40rpx;
+}
+
+.typeCalory {
+  color: #32d594;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+
+.round {
+  font-size: 18rpx;
+  text-align: center;
+  color: #7ec97d;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+
+.round-2 {
+  font-size: 18rpx;
+  text-align: center;
+  color: #e76f58;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+
+.round-3 {
+  font-size: 18rpx;
+  text-align: center;
+  color: #f8de69;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}

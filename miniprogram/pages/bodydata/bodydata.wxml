@@ -1,0 +1,20 @@
+<!--pages/bodydata/bodydata.wxml-->
+<view class="box">
+        <view class="title">BMI</view>
+        <view class="content">
+          <view class="progress">
+                <Myprogress colors="{{colors[0]}}" dataNum="{{dataNum}}" des="{{des[0]}}" id="myProgress3" num="{{num[0]}}"></Myprogress>
+            </view>
+            <text class="desc">你当前的BMI指数</text>
+        </view>
+    </view>
+
+    <view class="box">
+        <view class="title">体脂率</view>
+        <view class="content">
+            <view class="progress">
+                <Myprogress colors="{{colors[0]}}" dataNum="{{fatrateNum}}" des="{{des[1]}}" id="myProgress4" num="{{num[1]}}"></Myprogress>
+            </view>
+            <text class="desc">你当前的体脂率{{fatStr}}</text>
+        </view>
+    </view>

@@ -3,7 +3,20 @@
     "pages/index/index",
     "pages/classify/classify",
     "pages/diary/diary",
-    "pages/my/my"
+    "pages/useadd/useadd",
+    "pages/text/text",
+    "pages/text1/text1",
+    "pages/bodydata/bodydata",
+    "pages/user-info/user-info",
+    "pages/my/my",
+    "pages/width-record/index",
+    "pages/analyze/analyze",
+    "pages/myAdd/myAdd",
+    "pages/login/login",
+    "pages/diary1/diary1",
+    "pages/adddiary/adddiary"
+    
+
   ],
   "window": {
     "backgroundTextStyle": "light",

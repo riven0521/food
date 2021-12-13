@@ -1,0 +1,296 @@
+.container {
+  /* box-shadow: inset 1px 1px 8px #ebedf0; */
+  width: 100%;
+  display: flex;
+}
+
+.info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.data{
+  flex: 1;
+  vertical-align: middle;
+   color: #b2b4bc;
+   font-weight: normal;
+   font-size: 30rpx;
+   text-align: right;
+
+}
+.hr{
+  height:1px;
+  background-color: #f2f2f2;
+}
+.agg {
+  height: 150rpx;
+  line-height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 34rpx;
+  color: #424242;
+  font-weight: bold;
+
+  /* width: 100%;
+  height: 130rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+
+
+
+
+.nickName {
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  vertical-align: middle;
+  position: relative;
+  font-size: 34rpx;
+  color: #424242;
+  font-weight: bold;
+}
+
+.nickName::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(.5);
+  background-color: #e6e6e6;
+}
+
+.container .real {
+  float: right;
+  margin-right: 20rpx;
+  vertical-align: middle;
+  color: #b2b4bc;
+  font-weight: normal;
+  font-size: 30rpx;
+  text-align: right;
+  height: 100%;
+}
+
+.a {
+  float: right;
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 25rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+}
+
+.n {
+  float: right;
+}
+
+.btnSave {
+  width: 90%;
+  height: 80rpx;
+  background-color: #00d696;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  margin-top: 80rpx;
+}
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  height: 740rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: -20rpx;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+  border-radius: 20rpx;
+}
+
+.btn-box {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.btn-box .btn-cancel {
+  color: #b2b4bc;
+  font-size: 34rpx;
+  margin-left: 40rpx;
+}
+
+.btn-box .btn-confirm {
+  color: #34d594;
+  font-size: 34rpx;
+  float: right;
+  margin-right: 40rpx;
+}
+.sex {
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  position: relative;
+  font-size: 34rpx;
+  color: #424242;
+  font-weight: bold;
+}
+
+.input_view {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+  box-sizing: border-box;
+}
+
+.page_box .title {
+  display: block;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #aaa;
+}
+
+.input_box {
+  display: flex;
+  padding: 20rpx 0;
+  height: 90rpx;
+  border-bottom: 1px solid #efefef;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.input_label {
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-right: 5rpx;
+}
+
+.content {
+  font-size: 80rpx;
+  line-height: 90rpx;
+  font-weight: bold;
+}
+
+.className {
+  height: 90rpx;
+  border-radius: 6rpx;
+  animation: twinkling 1s infinite;
+  font-size: 28rpx;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* @-webkit-keyframes twinkling {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+.pay {
+  display: block;
+  width: 300rpx;
+  height: 90rpx;
+  border-radius: 12rpx;
+  background: #62b900;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+  margin: 50rpx auto;
+  font-size: 32rpx;
+}
+
+.keyboard {
+  height: 0;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transition: height 0.3s;
+}
+
+.hind_box {
+  height: 410rpx;
+}
+
+.complete {
+  background: #efefef;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: right;
+  padding: 0 25rpx;
+  color: #0f0;
+}
+
+.key_box {
+  overflow: hidden;
+}
+
+.keys {
+  float: left;
+  width: 250rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-left: 1px solid #eee;
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+}
+
+.border0 {
+  border-left: 0;
+}
+
+.bg_color {
+  background: #ccc;
+}
+
+.btn-box .bt-date {
+  font-size: 36rpx;
+  color: #424242;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-box .bt-date image {
+  width: 30rpx;
+  height: 16rpx;
+  margin-left: 10rpx;
+}
+
+.btn-box ::after {
+  clear: both;
+}

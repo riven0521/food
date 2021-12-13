@@ -57,6 +57,91 @@
         {
           "name": "pages/updateRecordSuccess/index",
           "pathName": "pages/updateRecordSuccess/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/useadd/useadd",
+          "pathName": "pages/useadd/useadd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/text/text",
+          "pathName": "pages/text/text",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/text1/text1",
+          "pathName": "pages/text1/text1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bodydata/bodydata",
+          "pathName": "pages/bodydata/bodydata",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user-info/user-info",
+          "pathName": "pages/user-info/user-info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/diary/diary",
+          "pathName": "pages/diary/diary",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/diary/diary",
+          "pathName": "pages/diary/diary",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/text1/text1",
+          "pathName": "pages/text1/text1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myAdd/myAdd",
+          "pathName": "pages/myAdd/myAdd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/diary/diary",
+          "pathName": "pages/diary/diary",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bodydata/bodydata",
+          "pathName": "pages/bodydata/bodydata",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/width-record/index",
+          "pathName": "pages/width-record/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user-info/user-info",
+          "pathName": "pages/user-info/user-info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/adddiary/adddiary",
+          "pathName": "pages/adddiary/adddiary",
+          "query": "",
           "scene": null
         }
       ]

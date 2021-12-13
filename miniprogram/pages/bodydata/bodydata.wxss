@@ -1,0 +1,38 @@
+/* pages/bodydata/bodydata.wxss */
+.box {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 40rpx;
+  margin-bottom: 100rpx;
+}
+
+
+.title {
+  height: 30px;
+  line-height: 30px;
+  width: 160rpx;
+  text-align: center;
+  display: inline-block;
+  font: 300 28rpx/30px "microsoft yahei";
+}
+.content {
+  box-shadow: 0 0 28px #ced2f1;
+  border-radius: 8px;
+  height: 400rpx;
+  margin-top: 40rpx;
+}
+
+.progress {
+  padding-top: 60rpx;
+  padding-bottom: 60rpx;
+}
+
+
+.desc {
+  color: #8b8f9c;
+  font-size: 36rpx;
+  margin-left: 80rpx;
+}

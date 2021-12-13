@@ -1,0 +1,120 @@
+/* pages/text/text.wxss *//* .tab-item{
+  width: 100%;
+  height: 100rpx;
+  display: inline-block;
+  white-space: nowrap;
+ 
+}
+
+.label-1{
+  width: 150rpx;
+  height: 100rpx;
+  display: inline-block;
+}
+.label{
+  margin-top: 5px;
+  width: 150rpx;
+  height: 100rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13pt;
+  color:#808080;
+  text-align: center;
+  line-height: 72rpx;
+} */
+
+
+
+.navbg {
+  color: #000000;
+  /* background-color: #f4f4f4; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav {
+  width: 75%;
+  height: 56px;
+}
+
+.add {
+  width: 25%;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 40px;
+  color: #6BA0D3;
+}
+
+.scroll-view_H {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.normal {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+.select {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 5rpx solid #6BA0D3;
+}
+
+/* 食物信息 */
+.pic {
+  width: 80px;
+  height: 100px;
+  padding: 10px;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.base-info {
+  width: 50%;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.ok {
+ width: auto;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 分割线 */
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #cccccc;
+  opacity: 0.2;
+}

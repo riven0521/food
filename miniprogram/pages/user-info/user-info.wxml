@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="info">
+    <view class="nickName">
+      <text>昵称</text>
+      <input bindinput="nicheng" class="real" value="{{useid}}"></input>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>身高</text>
+      <input bindinput="shengao" class="real" value="{{height}}"></input>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>目标体重</text>
+      <input bindinput="mubiao" class="real" value="{{new}}"></input>
+    </view>
+    <view class="hr"></view>
+    <view class="nickName">
+      <text>当前体重</text>
+      <input bindinput="dangqian" class="real" value="{{now}}"></input>
+    </view>
+
+
+    <view class="hr"></view>
+    <view class="agg">
+      <text>生日</text>
+      <!-- <view class="real">{{birthday}}</view> -->
+      <picker bindchange="shengri" mode="date" value="{{birthday}}" class="data">
+        <input disabled="true" placeholder="请选择" value="{{day}}"></input>
+      </picker>
+
+    </view>
+  </view>
+  <div bindtap="save" class="btnSave">
+    保存
+  </div>
+
+
+</view>
